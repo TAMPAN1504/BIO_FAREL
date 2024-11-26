@@ -15,7 +15,8 @@
         <div class="deskripsi">
             <h1>Muhammad Farel <br> Berkan Ali</h1>
             <p>SISWA SMA NEGERI 1 TARAKAN</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut, explicabo?</p>
+            <p>Never regret a day in your life. Good days bring you happiness and bad days give you experience.</p>
+            <button onclick="musik()">Musik</button>
         </div>
     </section>
 
@@ -146,14 +147,16 @@
     </div>
     <audio src="assets/audio/Pamungkas - Risalah Hati (Official Audio) - Pamungkas (youtube).mp3" id="lagu" loop></audio>
     <script defer>
-        let lagu = document.querySelector("#lagu");
-        let confirmPlay = confirm("Pengen denger lagu juga kah sod?");
-        if(confirmPlay === true){
-            lagu.load();
-            lagu.play();
-            alert("selamat menikmati sod");
-        }else{
-            alert("okh gpp sod")
+        let lagu = document.querySelector("#lagu")
+        let musik = () => {
+            let confirmPlay = confirm("Pengen dengar lagu kah sod?")
+            if (confirmPlay){
+                lagu.load();
+                lagu.play();
+                alert("Selamat menikmati sod");
+            }else{
+                alert("ok lah sod")
+            }
         }
 
         
