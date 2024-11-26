@@ -145,12 +145,13 @@
         </div>
     </div>
     <audio src="assets/audio/Pamungkas - Risalah Hati (Official Audio) - Pamungkas (youtube).mp3" id="lagu" loop></audio>
-    <script>
+    <script defer>
         let lagu = document.querySelector("#lagu");
-        let confirmPlay = confirm("Pengen denger lagu juga kah sod?")
+        let confirmPlay = confirm("Pengen denger lagu juga kah sod?");
         if(confirmPlay === true){
+            lagu.load();
             lagu.play();
-            alert("selamat menikmati sod")
+            alert("selamat menikmati sod");
         }else{
             alert("okh gpp sod")
         }
